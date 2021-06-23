@@ -1,10 +1,11 @@
 console.log("Hi this is the first time i am writing a bot program");
+require('dotenv').config();
 
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.login('ODU3MjYwMjcxOTY5NjMyMjg2.YNM_1w.iUnrKafkeMwp6nvlvr9mphQ3fhM')
+client.login(process.env.TOKEN)
 
 client.on('ready', itsReady)
 
